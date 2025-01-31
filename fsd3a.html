@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+        }
+        main {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        article, aside {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 45%;
+        }
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+        figcaption {
+            margin-top: 10px;
+            font-style: italic;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <article>
+            <h2>About Us</h2>
+            <p>
+                Welcome to our website! We are dedicated to providing the best services to our customers. Learn more about our journey and values. Here is a word with a <span class="highlight">highlight</span> effect.
+            </p>
+            <figure>
+                <img src="img1.jpeg" alt="Full Stack Development" />
+                <figcaption>Our Team at Work</figcaption>
+            </figure>
+        </article>
+        <aside>
+            <h2>Latest News</h2>
+            <p>Check out our latest updates on the website.</p>
+        </aside>
+    </main>
+    <footer>
+        © 2024 My Website | All Rights Reserved
+    </footer>
+</body>
+</html>
