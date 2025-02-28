@@ -1,0 +1,28 @@
+<html> 
+    <head> 
+        <title> factorial in javascript </title>
+    </head>
+     <body>  
+        <button onclick="myFunction()"> click the button </button>
+        <script>  
+            function myFunction(){ 
+                let y=1;
+            let x = prompt("Please enter your number"); 
+            if(x==0){ 
+                window.alert("the factorial is 1");
+            }  
+            if(x==1){ 
+                window.alert("the factorial is 1 ");
+            } 
+            else{ 
+                while(x!=1){  
+                    y=x*y; 
+                    x--;
+                } 
+                window.alert("the factorial is"+y);
+             }
+            }
+
+        </script>
+     </body>
+</html>
