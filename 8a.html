@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Largest Number</title>
+    <style>
+        * {
+            text-align:center;
+            font-family: sans-serif;
+        }
+        div {
+            margin: 20px 0;
+        }
+        div button {
+            background-color: #007BFF;
+            color: azure;
+            font-size: 15px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        p {
+            border: 1px solid black;
+            background-color: rgba(153,153,153,0.2);
+            max-width: 40vw;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Find the Largest Number</h1>
+    <div>
+        <button onclick="maxOfthree()">Enter Numbers</button>
+    </div>
+    <p id="reply">Click the button to enter the numbers</p>
+    <script>
+        function maxOfthree() {
+            const a = parseInt(prompt("Enter the first number"));
+            const b = parseInt(prompt("Enter the second number"));
+            const c = parseInt(prompt("Enter the third number"));
+            let lar;
+
+            if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                lar = "Please enter valid numbers.";
+            } else if (a === b && b === c) {
+                lar = "Equal numbers: " + a;
+            } else if (a > b && a > c) {
+                lar = a + " is the largest number.";
+            } else if (b > c) {
+                lar = b + " is the largest number.";
+            } else {
+                lar = c + " is the largest number.";
+            }
+
+            document.getElementById("reply").innerHTML = lar;
+        }
+    </script>
+</body>
+</html>
